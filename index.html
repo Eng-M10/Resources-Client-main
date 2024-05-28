@@ -154,11 +154,10 @@
 
     <h2 class="mt-4">Criar Recursos</h2>
     <form id="create-resource-form">
-      <div class="form-group">
-        <label for="resource-name">Resource Name:</label>
-        <input type="text" class="form-control" id="resource-name" required>
-      </div>
-      <button type="submit" class="btn btn-success">Criar</button>
+      <label for="resource-name">Resource Name:</label>
+      <input type="text" id="resource-name" required>
+      <br>
+      <button type="submit">Criar</button>
     </form>
 
     <h3 class="mt-4">Historico</h3>
@@ -177,51 +176,6 @@
     <button id="logout-button" class="btn btn-danger">Sair</button>
   </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Switch between forms
-      document.getElementById('show-signup').addEventListener('click', function () {
-        switchForm('signup-form');
-      });
-      document.getElementById('show-login').addEventListener('click', function () {
-        switchForm('login-form');
-      });
-      document.getElementById('show-password-reset').addEventListener('click', function () {
-        switchForm('password-reset-form');
-      });
-      
-      // Handle password reset form submission
-      document.getElementById('password-reset-form').addEventListener('submit', function (e) {
-        e.preventDefault();
-        switchForm('verify-otp-form');
-      });
-
-      // Handle OTP verification form submission
-      document.getElementById('verify-otp-form').addEventListener('submit', function (e) {
-        e.preventDefault();
-        switchForm('reset-password-form');
-      });
-
-      function switchForm(formId) {
-        document.querySelectorAll('.form-section').forEach(function (form) {
-          form.classList.remove('active');
-        });
-        document.getElementById(formId).classList.add('active');
-      }
-
-      // Example login success handler to show resource list
-      document.getElementById('login-form').addEventListener('submit', function (e) {
-        e.preventDefault();
-        document.getElementById('login-signup-form').style.display = 'none';
-        document.getElementById('resource-list').style.display = 'block';
-      });
-    });
-  </script>
-
-  <script src="script/script.js"></script>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./script/script.js"></script>
 </body>
 </html>
