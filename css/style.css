@@ -1,15 +1,56 @@
-body{font-family:Arial,sans-serif;margin:0;padding:0;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100vh;background-color:#f5f5f5}h1,h2{color:#333;text-align:center}.container{max-width:600px;width:100%;padding:20px;background-color:#fff;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,0.1)}.recurso{margin-bottom:10px;padding:10px;border:1px solid #ccc;background-color:#f9f9f9;display:flex;justify-content:space-between;align-items:center}button{padding:5px 10px;border:none;cursor:pointer;background-color:#007bff;color:#fff}button:hover{background-color:#0056b3}input[type="text"]{padding:8px;border:1px solid #ccc;width:70%}.btn-add{width:fit-content;margin-left:2%;background-color:#28a745}.btn-add:hover{background-color:#218838}
-/* Center the alerts */
-.alert {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #f8d7da;
-    color: #721c24;
-    padding: 20px;
-    border-radius: 5px;
-    border: 1px solid #f5c6cb;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
-}
+/* style.css */
+body {
+    background-color: #f0f8ff;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .btn-primary, .btn-success, .btn-danger, .btn-warning, .btn-info {
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .btn-primary:hover, .btn-success:hover, .btn-danger:hover, .btn-warning:hover, .btn-info:hover {
+    transform: scale(1.05);
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  #resources-table th, #history-table th {
+    text-align: center;
+  }
+  
+  #resources-table td, #history-table td {
+    text-align: center;
+  }
+  
+  .modal-content {
+    border-radius: 15px;
+  }
+  
+  .form-section {
+    display: none;
+  }
+  
+  .form-section.active {
+    display: block;
+  }
+  #nav-logout {
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  #nav-logout:hover {
+    transform: scale(1.05);
+  }
+    
