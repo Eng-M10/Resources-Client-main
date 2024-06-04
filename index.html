@@ -19,10 +19,10 @@
       </div>
      
       <nav class="nav">
-        <a class="nav-link text-white" href="#resources-table" id="nav-resources">Recursos</a>
-        <a class="nav-link text-white" href="#reserved-resources-container" id="nav-reserved">Reservado</a>
-        <a class="nav-link text-white" href="#create-resource-form" id="nav-create">Criar</a>
-        <a class="nav-link text-white" href="#history-section" id="nav-history">Histórico</a>
+        <a class="nav-link text-white" href="#" id="nav-resources">Recursos</a>
+        <a class="nav-link text-white" href="#" id="nav-reserved">Reservado</a>
+        <a class="nav-link text-white" href="#" id="nav-create">Criar</a>
+        <a class="nav-link text-white" href="#" id="nav-history">Histórico</a>
         <br><br>
         <button class="btn btn-danger" id="nav-logout"><i class="fas fa-sign-out-alt"></i> Sair</button>
       </nav>
@@ -194,44 +194,11 @@
 
 
   <script src="./script/script.js"></script>
-  <script>
-    
-  document.getElementById("nav-resources").onclick = function () {
-    document.getElementById("resource-list").scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-            });
-  };
-  document.getElementById("nav-reserved").onclick = function () {
-    document.getElementById("reserved-resources-container").scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-            });
-  document.getElementById("nav-create").onclick = function () {
-    document.getElementById("create-resource-form").scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-            });
-  document.getElementById("nav-history").onclick = function () {
-    document.getElementById("history-section").scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-            });
-    document.getElementById("toggle-history").onclick = function () {
-    const historyTable = document.getElementById("history-section");
-    if (historyTable.style.display === "none") {
-        historyTable.style.display = "block";
-        fetchHistory(); // Isso garante que o histórico seja carregado quando o usuário clicar para mostrar.
-        this.textContent = "Ocultar Histórico";
-    } else {
-        historyTable.style.display = "none";
-        this.textContent = "Mostrar Histórico";
-    }
-};
-
-  </script>
+  <script src="./script/navigation.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
+
 </html>
