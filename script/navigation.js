@@ -21,7 +21,7 @@
             });}
 
   document.getElementById("nav-history").onclick = function () {
-    document.getElementById("history-section").scrollIntoView({
+    document.getElementById("toggle-history").scrollIntoView({
                 behavior: 'smooth',
                 block: 'start',
             });}
